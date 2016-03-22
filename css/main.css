@@ -22,6 +22,7 @@ h1 {
 }
 .by-day-text {
   color: rgb(112, 156, 250);
+  font-size: 1.8em;
 }
 
 /* 
@@ -81,11 +82,12 @@ h1 {
   margin-top: 0;
 }
 /* DEBUG HERE TO FIX BUBBLE SIZING */
+/* Media query stuff: http://tinyurl.com/qfrxem6 */
 .spec-bubble {
   display: inline-block;
   position: relative;
-  width: 25%;
-  height: 25%;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   text-align: center;
   vertical-align: top;
@@ -99,6 +101,8 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
 }
 
 /* 
@@ -109,10 +113,6 @@ a {
 }
 .spec-bubble {
   background-color: rgba(112, 156, 250, .75);
-}
-.spec-bubble img {
-  width: 80%;
-  height: 80%;
 }
 
 /* 
