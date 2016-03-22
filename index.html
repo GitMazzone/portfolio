@@ -43,6 +43,7 @@
         browser</a> to improve your experience.</p>
       <![endif]-->
       <div class='main'>
+        
         <!-- Start page/section 1 -->
         <section class='onepage-wrapper' id='s1'>
           <h1 id='by-day'>By day...</h1>
@@ -55,7 +56,7 @@
                 <a href="#open-java-modal">
                   <div class='spec-bubble hover-grow'>
                     <img src="img/java-logo.png" alt="Java logo" 
-                      class='spec-content grayscale' id='java'/>
+                      class='spec-content grayscale' />
                   </div>
                 </a>
                 <!-- Modal window -->
@@ -70,7 +71,7 @@
                 <a href="#open-js-modal">
                   <div class='spec-bubble hover-grow'>
                     <img src="img/js-logo.png" alt="Javascript logo" 
-                      class='spec-content grayscale' id='js' />
+                      class='spec-content grayscale' />
                   </div>
                 </a>
                 <!-- Modal window -->
@@ -87,7 +88,7 @@
                 <a href="#open-html-modal">
                   <div class='spec-bubble hover-grow'>
                     <img src="img/html-logo.png" alt="HTML5 logo"
-                      class='spec-content grayscale' id='html-logo' />
+                      class='spec-content grayscale' />
                   </div>
                 </a>
                 <!-- Modal window -->
@@ -102,7 +103,7 @@
                 <a href="#open-css-modal">
                   <div class='spec-bubble hover-grow'>
                     <img src="img/css-logo.png" alt="CSS3 logo"
-                      class='spec-content grayscale' id='css-logo' />
+                      class='spec-content grayscale' />
                   </div>
                 </a>
                 <!-- Modal window -->
@@ -125,53 +126,90 @@
               <h3 class='characteristic by-day-text' 
                 style="padding-bottom: 30px;">Student</h3> 
               <div style="text-align: center; margin-bottom: 0;">
-                <a href="#">
+                <!-- UGA section -->
+                <a href="#open-uga-modal">
                   <div class='spec-bubble hover-grow'>
-                    <p class="spec-content">UGA</p>
+                    <img src="img/uga-logo.png" alt="UGA logo"
+                      class='spec-content grayscale' 
+                      style="width: 70%; height: 75%;"/>
                   </div>
                 </a>
-                <a href="#">
+                <!-- Modal window -->
+                <div id='open-uga-modal' class='modal-bg'>
+                  <div class='modal-content'>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>University Student</h2>
+                    <p>Paragraph about my time at UGA.</p>
+                  </div>
+                </div>
+                <!-- CSCI section -->
+                <a href="#open-csci-modal">
                   <div class='spec-bubble hover-grow'>
-                    <p class="spec-content">CSCI</p>
+                    <img src="img/cs-logo.png" alt="Computer science logo"
+                      class='spec-content grayscale' 
+                      style="border-radius: 50%;"/>
                   </div>
                 </a>
+                <!-- Modal window -->
+                <div id='open-csci-modal' class='modal-bg'>
+                  <div class='modal-content'>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Computer Science Major</h2>
+                    <p>Paragraph about what I've learned in school.</p>
+                  </div>
+                </div>
               </div>
               <div style="text-align: center; margin-top: -5px;">
-                <a href="#">
+                <!-- FCC section -->
+                <a href="#open-fcc-modal">
                   <div class='spec-bubble hover-grow'>
-                    <p class="spec-content">FCC</p>
+                    <img src="img/fcc-logo.png" alt="Free Code Camp logo"
+                      class='spec-content grayscale' 
+                      style="width: 70%; height: 50%;"/>
                   </div>
                 </a>
-                <a href="#">
+                <!-- Modal window -->
+                <div id='open-fcc-modal' class='modal-bg'>
+                  <div class='modal-content'>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Free Code Camp Student</h2>
+                    <p>Paragraph about what I've learned at FCC.</p>
+                  </div>
+                </div>
+                <!-- Books section -->
+                <a href="#open-books-modal">
                   <div class='spec-bubble hover-grow'>
-                    <p class="spec-content">Books</p>
+                    <img src="img/books.png" alt="Stack of books"
+                      class='spec-content grayscale' 
+                      style="width: 65%; height: 60%;"/>
                   </div>
                 </a>
+                <!-- Modal window -->
+                <div id='open-books-modal' class='modal-bg'>
+                  <div class='modal-content'>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Books I've Read</h2>
+                    <p>List of books I've read.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
         <!-- Start page/section 2 -->
         <section class='onepage-wrapper' id='s2'>
           <div class='section-content'>
             <h1>By night...</h1>
-            <div class='by-night-bubble'><!-- Guitar --></div>
-            <div class='by-night-bubble'><!-- Hardware --></div>
-            <div class='by-night-bubble'><!-- Photoshop --></div>
-            <div class='by-night-bubble'><!-- Kayaking --></div>
+            <div class='hobby-bubble'><!-- Guitar --></div>
+            <div class='hobby-bubble'><!-- Hardware --></div>
+            <div class='hobby-bubble'><!-- Photoshop --></div>
+            <div class='hobby-bubble'><!-- Kayaking --></div>
           </div>
         </section>
+
         <!-- Start page/section 3 -->
         <section class='onepage-wrapper' id='s3'>
-          <div class='section-content'>
-            <h1>Here's my work:</h1>
-            <div class='works-bubble'><!-- Calculator --></div>
-            <div class='works-bubble'><!-- This site --></div>
-            <div class='works-bubble'><!-- Free Code Camp --></div>
-          </div>
-        </section>
-        <!-- Start page/section 4 -->
-        <section class='onepage-wrapper' id='s4'>
           <div class='section-content'>
             <h1>Get in touch:</h1>
             <div class='social-bubble'><!-- LinkedIn --></div>
