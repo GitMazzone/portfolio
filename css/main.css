@@ -109,7 +109,7 @@ h1 {
   margin-right: 5%;
   margin-top: 5%;
 }
-.s2-center {
+.section-center {
   text-align: center;
   position: relative;
   top: 30%;
@@ -126,7 +126,9 @@ a {
 .spec-bubble {
   background-color: rgba(112, 156, 250, .75);
 }
-
+.spec-bubble:hover {
+  background-color: rgba(112, 156, 250, 1.0);
+}
 /* 
  * Effects
 ----------------------------------------------------------------*/
@@ -135,7 +137,6 @@ a {
 }
 .hover-grow:hover {
   transform:scale(1.3); 
-  background-color: rgba(112, 156, 250, 1.0);
 }
 .grayscale { 
     filter: grayscale(100%);
@@ -151,6 +152,7 @@ a {
 
 /* 
  * Modal windows
+ * FIX SECOND PAGE ISSUES
 ----------------------------------------------------------------*/
 .modal-bg {
   position: fixed;
