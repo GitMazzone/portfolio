@@ -67,7 +67,8 @@ h1 {
 }
 .profile img {
   text-align: center;
-  width: 60%;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   margin-top: 0;
   margin-bottom: 0;
@@ -78,8 +79,6 @@ h1 {
   text-align: center;
   margin-top: 0;
 }
-/* DEBUG HERE TO FIX BUBBLE SIZING */
-/* Media query stuff: http://tinyurl.com/qfrxem6 */
 .spec-bubble {
   display: inline-block;
   position: relative;
@@ -100,6 +99,22 @@ h1 {
   transform: translate(-50%, -50%);
   width: 70%;
   height: 70%;
+}
+.hobby-bubble {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.s2-center {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
 }
 
 /* 
@@ -183,3 +198,5 @@ a {
   background: #FFFFFF; 
   color: #606061;
 }
+
+/* Media query stuff: http://tinyurl.com/qfrxem6 */
