@@ -1,4 +1,4 @@
-/* 
+ 
  * Fonts
 ----------------------------------------------------------------*/
 @font-face {
@@ -67,8 +67,8 @@ h1 {
 }
 .profile img {
   text-align: center;
-  width: 360px;
-  height: 360px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin-top: 0;
   margin-bottom: 0;
@@ -82,13 +82,13 @@ h1 {
 .spec-bubble {
   display: inline-block;
   position: relative;
-  width: 125px;
-  height: 125px;
   border-radius: 50%;
   text-align: center;
   vertical-align: top;
   margin-bottom: 10px;
   overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 .spec-content {
   margin: 0;
@@ -101,8 +101,8 @@ h1 {
   height: 70%;
 }
 .hobby-bubble {
-  width: 275px;
-  height: 275px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   display: inline-block;
   margin-left: 5%;
@@ -115,6 +115,57 @@ h1 {
   top: 30%;
   left: 30%;
   transform: translate(-30%, -30%);
+}
+
+/* 
+ * Responsive styling
+----------------------------------------------------------------*/
+.mobile-view {
+  display: none;
+}
+/* Common mobile css */
+@media only screen and (max-width: 767px) {
+  .non-mobile {
+    display: none;
+  }
+  .mobile-view {
+    display: inline-block;
+    height: 100vh;
+  }
+}
+/* Smartphone portrait */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+}
+/* Smartphone landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+/* Laptops & smaller screens */
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+  .spec-bubble {
+    width: 100px;
+    height: 100px;
+  }
+  .profile img {
+    width: 300px;
+    height: 300px;
+  }  
+  .hobby-bubble {
+    width: 180px;
+    height: 180px;
+  }
+}
+/* Large screens */
+@media only screen and (min-width: 1301) {
+  .spec-bubble {
+    width: 125px;
+    height: 125px;
+  }
+  .profile img {
+    width: 360px;
+    height: 360px;
+  }
 }
 
 /* 
@@ -201,4 +252,4 @@ a {
   color: #606061;
 }
 
-/* Media query stuff: http://tinyurl.com/qfrxem6 */
+/* Media query stuff: http://tinyurl.com/qfrxem6 
