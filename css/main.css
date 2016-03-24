@@ -36,10 +36,10 @@ section {
   background-image: url('../img/by-day.jpg');
 }
 #s2 {
-  background-image: url('../img/by-night.jpg');
+  background-image: url('../img/by-night-half.jpg');
 }
 #s3 {
-  background-image: url('../img/bottom.jpg');
+  background-image: url('../img/contact-bg.jpg');
 }
 
 /* 
@@ -152,7 +152,7 @@ a {
 
 /* 
  * Modal windows
- * FIX SECOND PAGE ISSUES
+ * FIX SECOND/THIRD PAGE ISSUES
 ----------------------------------------------------------------*/
 .modal-bg {
   position: fixed;
