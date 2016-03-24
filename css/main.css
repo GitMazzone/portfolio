@@ -189,6 +189,12 @@ a {
 .hover-grow:hover {
   transform:scale(1.3); 
 }
+.hover-grow-profile {
+  transition: transform 0.2s ease-in; 
+}
+.hover-grow-profile:hover {
+  transform:scale(1.15); 
+}
 .grayscale { 
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
