@@ -24,6 +24,10 @@ h1 {
   color: rgb(112, 156, 250);
   font-size: 1.8em;
 }
+.arrow a{
+  font-size: 1.5em;
+  font-family: 'HindNormal';
+}
 
 /* 
  * Sections
@@ -116,6 +120,39 @@ h1 {
   left: 30%;
   transform: translate(-30%, -30%);
 }
+.gallery {
+  display: inline-block;
+  padding-left: 1%;
+}
+.gal-explanation {
+  text-align: left;
+  display: inline-block;
+  width: 60%;
+  height: 85%;
+  vertical-align: top;
+  margin-left: 5%;
+  padding-top: 10%;
+}
+.arrow {
+  background: transparent;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+.arrow:hover {
+  background-color: #908E8E;
+}
+.gal-nav {
+  display: block;
+  margin-left: -65%;
+}
+.nav-img {
+  width: 25px;
+  height: 25px;
+}
 
 /* 
  * Responsive styling
@@ -180,6 +217,7 @@ a {
 .spec-bubble:hover {
   background-color: rgba(112, 156, 250, 1.0);
 }
+
 /* 
  * Effects
 ----------------------------------------------------------------*/
@@ -220,8 +258,6 @@ a {
   background: rgba(0,0,0,0.8);
   z-index: 99999;
   opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
 }
@@ -235,27 +271,34 @@ a {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: rgb(112, 156, 250);
+  background: rgba(112, 156, 250, 0.75);
 }
 .close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
+  background: transparent;
   position: absolute;
   right: -12px;
   text-align: center;
   top: -12px;
-  width: 24px;
+  width: 30px;
+  height: 30px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 12px;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
+  border-radius: 30px;
 }
-.close:hover { 
-  background: #FFFFFF; 
-  color: #606061;
+
+.close img {
+  width: 30px;
+  height: 30px;
+}
+.gallery {
+  width: 30%;
+  height: 85%;
+}
+.gal-img {
+  width: 100%;
+  height: 100%;
+}
+.gal-next {
+  display: none;
 }
 
 /* Media query stuff: http://tinyurl.com/qfrxem6 
