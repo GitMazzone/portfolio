@@ -34,6 +34,8 @@
             });
           });
         </script>
+        <!-- Cycle, gallery plugin -->
+        <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     </head>
     
     <body>
@@ -83,42 +85,35 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>Java Experience</h2>
-                    <div class="gallery">
-                      <img src="img/calc-adding.gif" class="gal-img gal-first"
-                        alt="Calculator adding" />
-                      <img src="img/calc-shifting.gif" 
-                        class="gal-img gal-next" />
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev"
+                        data-cycle-next="#next">
+                        <img src="img/calc-adding.gif" class="gal-img"
+                          alt="Calculator adding" />
+                        <img src="img/calc-shifting.gif" class="gal-img" />
+                      </div>
+                      <img src="img/left-arrow.png" id="prev" class="nav-img"
+                        alt="Back arrow navigation">
+                      <img src="img/right-arrow.png" id="next" class="nav-img"
+                        alt="Forward arrow navigation">
                     </div>
-                    <div class="gal-explanation">
+                    <div class="gal-caption">
                       <p>
                         This is my programmer's calculator! It handles up to 32
                         bits, does all your basic math recursively or 
                         iteratively, and handles bit manipulation like shifting
                         or flipping.
                       </p>
-                      <p>
+                      <p style="padding-top: 15px;">
                         I utilized the MVC design practice. This consists of 
                         math classes for the model, FXML for the view, and a
                         controller class.
                       </p>
-                      <!-- Model: math functions - same regradless
-                         View: FXML
-                         Controller: controller class / handler -->
                     </div>
-                    <!-- Change 'a's to something more appropriate -->
-                    <!-- Achieve gallery transition with jQuery -->
-                    <nav class="gal-nav">
-                      <div class="back-arrow arrow">
-                        <a href="#back-arrow">
-                          <img src="img/left-arrow.png" class="nav-img"
-                          alt="Back arrow navigation"></a>
-                      </div>
-                      <div class="next-arrow arrow">
-                        <a href="#next-arrow">
-                          <img src="img/right-arrow.png" class="nav-img"
-                          alt="Forward arrow navigation"></a>
-                      </div>
-                    </nav>
                   </div>
                 </div>
                 <!-- JS section -->
@@ -357,8 +352,11 @@
     </body>
 </html>
 
-<!-- ANGULAR.JS LEARNING SITES:
+<!-- 
+  ANGULAR.JS LEARNING SITES:
      https://angularjs.org/
      http://www.w3schools.com/angular/
      https://github.com/angular/angular.js
+  Cycle (slideshow) resource:
+    http://jquery.malsup.com/cycle2/demo/
  -->

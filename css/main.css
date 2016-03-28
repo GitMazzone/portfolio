@@ -1,5 +1,5 @@
  
- * Fonts
+ /* Fonts
 ----------------------------------------------------------------*/
 @font-face {
   font-family: 'MontserratBold';  /* Headings */
@@ -74,8 +74,6 @@ h1 {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
   margin: 0 auto;
   display: block;
 }
@@ -124,34 +122,29 @@ h1 {
   display: inline-block;
   padding-left: 1%;
 }
-.gal-explanation {
+.gal-caption {
   text-align: left;
   display: inline-block;
   width: 60%;
   height: 85%;
   vertical-align: top;
   margin-left: 5%;
-  padding-top: 10%;
+  padding-top: 12%;
 }
-.arrow {
-  background: transparent;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  display: inline-block;
-}
-.arrow:hover {
-  background-color: #908E8E;
-}
-.gal-nav {
-  display: block;
-  margin-left: -65%;
+.gal-img {
+  width: 100%;
+  height: 100%;
 }
 .nav-img {
   width: 25px;
   height: 25px;
+  margin-top: 10px;
+}
+.gal-container {
+  width: 35%;
+  margin: 0;
+  display: inline-block;
+  float: left;
 }
 
 /* 
@@ -217,6 +210,9 @@ a {
 .spec-bubble:hover {
   background-color: rgba(112, 156, 250, 1.0);
 }
+.nav-img {
+  cursor: pointer;
+}
 
 /* 
  * Effects
@@ -267,6 +263,7 @@ a {
 }
 .modal-bg > div {
   width: 800px;
+  height: 410px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
@@ -284,21 +281,9 @@ a {
   text-decoration: none;
   border-radius: 30px;
 }
-
 .close img {
   width: 30px;
   height: 30px;
 }
-.gallery {
-  width: 30%;
-  height: 85%;
-}
-.gal-img {
-  width: 100%;
-  height: 100%;
-}
-.gal-next {
-  display: none;
-}
 
-/* Media query stuff: http://tinyurl.com/qfrxem6 
+/* Media query stuff: http://tinyurl.com/qfrxem6 */
