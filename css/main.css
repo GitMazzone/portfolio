@@ -28,6 +28,10 @@ h1 {
   font-size: 1.5em;
   font-family: 'HindNormal';
 }
+#profile-link {
+  color: #b3ecff;
+  text-shadow: 1px 1px rgb(77, 77, 77);
+}
 
 /* 
  * Sections

@@ -36,11 +36,6 @@
     </head>
     
     <body>
-      <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong>
-        browser. Please <a href="http://browsehappy.com/">upgrade your 
-        browser</a> to improve your experience.</p>
-      <![endif]-->
       <div class="main">
 
         <!-- Mobile view -->
@@ -127,7 +122,28 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>JS Experience</h2>
-                    <p>Paragraph about how I've used JS.</p>
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev-js"
+                        data-cycle-next="#next-js">
+                        <img src="img/js-gal.png" class="gal-img"
+                          alt="Javascript logo" />
+                      </div>
+                    </div>
+                    <div class="gal-caption">
+                      <p style="padding-top: 30px;">
+                        I've created encryption and sorting algorithms, 
+                        manipulated strings, made use of JSON data, and so much
+                        more.
+                      </p>
+                      <p style="padding-top: 15px;">
+                        JavaScript and jQuery have given me the skills to make 
+                        interactive sites like this one.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -145,7 +161,27 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>HTML Experience</h2>
-                    <p>Paragraph about how I've used HTML.</p>
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev-html"
+                        data-cycle-next="#next-html">
+                        <img src="img/html-gal.png" class="gal-img"
+                          alt="HTML logo" />
+                      </div>
+                    </div>
+                    <div class="gal-caption">
+                      <p>
+                        Responsive sites, legible markup, and as little copying
+                        and pasting from plugins as possible.
+                      </p>
+                      <p style="padding-top: 15px;">
+                        I've learned by doing, and I've done quite a bit. Keep 
+                        going right to see more of my HTML work.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <!-- CSS section -->
@@ -161,7 +197,27 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>CSS Experience</h2>
-                    <p>Paragraph about how I've used CSS.</p>
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev-css"
+                        data-cycle-next="#next-css">
+                        <img src="img/css-gal.png" class="gal-img"
+                          alt="CSS logo" />
+                      </div>
+                    </div>
+                    <div class="gal-caption">
+                      <p>
+                        Clean and functional - that's the goal.
+                      </p>
+                      <p style="padding-top: 15px;">
+                        This bubble's mostly just here for symmetry, actually.
+                        I don't consider HTML and CSS seperate skillsets. It's 
+                        only here until I'm more experienced with C++.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -235,7 +291,38 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>Computer Science Major</h2>
-                    <p>Paragraph about what I've learned in school.</p>
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev-csci"
+                        data-cycle-next="#next-csci">
+                        <img src="img/csci-img-1.png" class="gal-img"
+                          alt="Stack data structure" />
+                        <img src="img/csci-img-2.png" class="gal-img" 
+                          alt="MVC diagram"/>
+                        <img src="img/csci-img-3.png" class="gal-img" 
+                          alt="OOP diagram"/>
+                      </div>
+                      <img src="img/left-arrow.png" id="prev-csci" 
+                        class="nav-img" alt="Back arrow navigation" />
+                      <img src="img/right-arrow.png" id="next-csci" 
+                        class="nav-img" alt="Forward arrow navigation" />
+                    </div>
+                    <div class="gal-caption">
+                      <p>
+                        Data structures, sorting algorithms, Big O notation,
+                        object oriented programming, and software design 
+                        practices. These, among others, are all things I've 
+                        learned as a university student. 
+                      </p>
+                      <p style="padding-top: 15px;">
+                        As a holistic learner, I would never just depend on
+                        free resources or independent study. A 
+                        university-level of understanding is priceless.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -279,9 +366,10 @@
                       <p style="padding-top: 15px;">
                         Free Code Camp provides hundreds of hours of training
                         in web development. 
-                        <a href="https://www.freecodecamp.com/gitmazzone">On 
-                        my profile</a> you can see my algorithm design, front-
-                        end development, and major projects.
+                        <a href="https://www.freecodecamp.com/gitmazzone"
+                        id="profile-link">On my profile</a> you can see my 
+                        algorithm design, front-end development, and major 
+                        projects.
                       </p>
                     </div>
                   </div>
@@ -300,7 +388,39 @@
                     <a href="#close" title="Close" class="close">
                       <img src="img/exit-icon.png"></a>
                     <h2>Books I've Read</h2>
-                    <p>List of books I've read.</p>
+                    <!-- Gallery & caption -->
+                    <div class="gal-container">
+                      <div class="cycle-slideshow"
+                        data-cycle-fx=scrollHorz
+                        data-cycle-timeout=0
+                        data-cycle-prev="#prev-books"
+                        data-cycle-next="#next-books">
+                        <!-- GET BOOK IMAGES 394x484 -->
+                        <img src="img/book-1.png" class="gal-img"
+                          alt="JavaScript and jQuery book by Duckett" />
+                        <img src="img/book-2.png" class="gal-img" 
+                          alt="HTML and CSS book by Duckett"/>
+                        <img src="img/book-3.png" class="gal-img" 
+                          alt="Java Foundations book by Lewis"/>
+                      </div>
+                      <img src="img/left-arrow.png" id="prev-books" 
+                        class="nav-img" alt="Back arrow navigation" />
+                      <img src="img/right-arrow.png" id="next-books" 
+                        class="nav-img" alt="Forward arrow navigation" />
+                    </div>
+                    <div class="gal-caption">
+                      <p>
+                        What would anyone be without books? I've learned more
+                        tips and tools of the trade from books than any other
+                        source. 
+                      </p>
+                      <p style="padding-top: 15px;">
+                        I try to read daily, and focus mainly on books related
+                        to my current interest: Android development, best web
+                        practices, or even recreating JavaScript functionality
+                        seen elsewhere.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
