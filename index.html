@@ -14,9 +14,13 @@
 
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script 
+          src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+        </script>
         <!-- One Page Scroll imports & script -->
-        <script type="text/javascript" src="js/vendor/jquery.onepage-scroll.js"></script>
+        <script type="text/javascript" 
+          src="js/vendor/jquery.onepage-scroll.js">
+        </script>
         <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
         <script>
           $(document).ready(function(){
@@ -36,26 +40,24 @@
     </head>
     
     <body>
-      <div class="main">
-
-        <!-- Mobile view -->
-        <div class="mobile-view">
-          <h3>Michael Mazzone</h3>
-          <img src="img/profile.jpg" 
-            alt="Michael Mazzone profile picture" />
-          <div class="skill-block">
-            <!-- Work -->
-          </div>
-          <div class="skill-block">
-            <!-- Programming languages -->
-          </div>
-          <div class="skill-block">
-            <!-- Education & Experience -->
-          </div>
+      <!-- Mobile view -->
+      <div class="mobile-view">
+        <h3>Michael Mazzone</h3>
+        <img src="img/profile.jpg" id="mobile-profile-pic"
+          alt="Michael Mazzone profile picture" />
+        <div class="skill-block" style="background-color: #4E4F4F">
+          <!-- Work -->
         </div>
-        
-        <!-- Non-mobile view -->
-        <div class="non-mobile">
+        <div class="skill-block" style="background-color: #709CFA">
+          <!-- Programming languages -->
+        </div>
+        <div class="skill-block" style="background-color: #FACE70">
+          <!-- Education & Experience -->
+        </div>
+      </div>
+
+      <!-- Non-mobile view -->
+      <div class="main non-mobile">
         <!-- Start page/section 1 -->
         <section class="onepage-wrapper" id="s1">
           <h1>By day...</h1>
@@ -395,7 +397,6 @@
                         data-cycle-timeout=0
                         data-cycle-prev="#prev-books"
                         data-cycle-next="#next-books">
-                        <!-- GET BOOK IMAGES 394x484 -->
                         <img src="img/book-1.png" class="gal-img"
                           alt="JavaScript and jQuery book by Duckett" />
                         <img src="img/book-2.png" class="gal-img" 
@@ -433,34 +434,9 @@
           <div class="section-content">
             <h1>By night...</h1>
             <div class="section-center">
-            <!-- Guitar -->
-              <a href="#open-guitar-modal">
-                <img src="img/guitar.jpg" alt="Acoustic guitar" 
-                  class="hover-grow grayscale hobby-bubble" />  
-              </a>
-              <!-- Modal window -->
-              <div id="open-guitar-modal" class="modal-bg">
-                <div class="modal-content">
-                  <a href="#close" title="Close" class="close">
-                    <img src="img/exit-icon.png"></a>
-                  <h2>Guitar Player</h2>
-                  <p>Paragraph about playing the guitar.</p>
-                </div>
-              </div>
               <!-- Hardware -->
-              <a href="#open-hardware-modal">
-                <img src="img/hardware.jpg" alt="RAM sticks" 
-                  class="hover-grow grayscale hobby-bubble" />  
-              </a>
-              <!-- Modal window -->
-              <div id="open-hardware-modal" class="modal-bg">
-                <div class="modal-content">
-                  <a href="#close" title="Close" class="close">
-                    <img src="img/exit-icon.png"></a>
-                  <h2>Hardware Enthusiast</h2>
-                  <p>Paragraph about hardware stuff.</p>
-                </div>
-              </div>
+              <img src="img/hardware.jpg" alt="RAM sticks" 
+                class="hover-grow grayscale hobby-bubble" />  
               <!-- Photoshop -->
               <a href="#open-photoshop-modal">
                 <img src="img/photoshop.png" alt="Photoshop logo" 
@@ -471,8 +447,26 @@
                 <div class="modal-content">
                   <a href="#close" title="Close" class="close">
                     <img src="img/exit-icon.png"></a>
-                  <h2>Photoshopper</h2>
-                  <p>Gallery of my work.</p>
+                  <h2>Some of My Photoshop Work</h2>
+                  <div class="gal-container" 
+                    style="width: 600px; height: 300px; margin: 20px 0 0 100px;">
+                    <div class="cycle-slideshow"
+                      data-cycle-fx=scrollHorz
+                      data-cycle-timeout=0
+                      data-cycle-prev="#prev-ps"
+                      data-cycle-next="#next-ps">
+                      <img src="img/ps-1.png" class="gal-img"
+                        alt="Photoshop art" />
+                      <img src="img/ps-2.png" class="gal-img" 
+                        alt="Photoshop art"/>
+                      <img src="img/ps-3.png" class="gal-img" 
+                        alt="Photoshop art"/>
+                    </div>
+                    <img src="img/left-arrow.png" id="prev-ps" 
+                      class="nav-img" alt="Back arrow navigation" />
+                    <img src="img/right-arrow.png" id="next-ps" 
+                      class="nav-img" alt="Forward arrow navigation" />
+                  </div>
                 </div>
               </div>
               <!-- Kayaking -->
@@ -509,26 +503,16 @@
                   class="hover-grow grayscale hobby-bubble clear" />  
               </a>
               <!-- Email -->
-              <a href="#open-email-section">
+              <a href="mailto:contact@michael-mazzone.com">
                 <img src="img/email-logo.png" alt="Email symbol" 
                   class="hover-grow grayscale hobby-bubble clear" />  
               </a>
             </div>
           </div>
         </section>
-        </div>
       </div>
 
       <script src="js/main.js"></script>
 
     </body>
 </html>
-
-<!-- 
-  ANGULAR.JS LEARNING SITES:
-     https://angularjs.org/
-     http://www.w3schools.com/angular/
-     https://github.com/angular/angular.js
-  Cycle (slideshow) resource:
-    http://jquery.malsup.com/cycle2/demo/
- -->
